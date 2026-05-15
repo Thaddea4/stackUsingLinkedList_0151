@@ -86,3 +86,30 @@ public:
             cout << "1. Exit\n";
             cout << "Enter your choice: ";
             cin >> choice;
+            
+            switch (choice)
+            {
+            case 1:
+                cout << "Enyter the value to push: ";
+                cin >> value;
+                stack.push(value);
+                break;
+            case 2:
+                stack.pop();
+                break;
+            case 3:
+                stack.peek();
+                break;
+
+            case 4:
+                cout << "Exiting program." << endl;
+                break;
+            default:
+                cout << "Invalid choice. Try again." << endl;
+                break;
+            }
+
+            cout << endl;
+        }
+    return 0;
+}
